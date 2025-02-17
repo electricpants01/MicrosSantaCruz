@@ -1,4 +1,4 @@
-package com.locototeam.microssantacruz.ui.components
+package com.locototeam.microssantacruz.ui.view.components
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer

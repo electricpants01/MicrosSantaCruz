@@ -1,4 +1,4 @@
-package com.locototeam.microssantacruz.ui.components
+package com.locototeam.microssantacruz.ui.view.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding

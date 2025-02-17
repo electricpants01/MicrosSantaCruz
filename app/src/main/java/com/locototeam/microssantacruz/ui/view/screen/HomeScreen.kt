@@ -9,13 +9,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.locototeam.microssantacruz.ui.components.FavoriteModel
-import com.locototeam.microssantacruz.ui.components.FavoritesComposable
-import com.locototeam.microssantacruz.ui.components.FrequentLinesComposable
-import com.locototeam.microssantacruz.ui.components.RecentModel
-import com.locototeam.microssantacruz.ui.components.RecentTripsComposable
-import com.locototeam.microssantacruz.ui.components.SearchBar
 import com.locototeam.microssantacruz.ui.theme.MicrosSantaCruzTheme
+import com.locototeam.microssantacruz.ui.view.components.FavoriteModel
+import com.locototeam.microssantacruz.ui.view.components.FavoritesComposable
+import com.locototeam.microssantacruz.ui.view.components.FrequentLinesComposable
+import com.locototeam.microssantacruz.ui.view.components.RecentModel
+import com.locototeam.microssantacruz.ui.view.components.RecentTripsComposable
+import com.locototeam.microssantacruz.ui.view.components.SearchBar
 
 @Composable
 fun HomeScreen(

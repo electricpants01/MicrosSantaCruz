@@ -1,4 +1,4 @@
-package com.locototeam.microssantacruz.ui.components
+package com.locototeam.microssantacruz.ui.view.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
