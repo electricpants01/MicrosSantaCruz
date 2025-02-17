@@ -8,11 +8,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.ModalDrawerSheet
@@ -33,6 +31,7 @@ import androidx.navigation.compose.rememberNavController
 import com.locototeam.microssantacruz.ui.theme.MicrosSantaCruzTheme
 import com.locototeam.microssantacruz.ui.view.bottomNav.BottomNavigationBar
 import com.locototeam.microssantacruz.ui.view.bottomNav.bottomNavItems
+import com.locototeam.microssantacruz.ui.view.drawer.DrawerContent
 import com.locototeam.microssantacruz.ui.view.screen.BusListScreen
 import kotlinx.coroutines.launch
 
@@ -57,7 +56,9 @@ class MainActivity : ComponentActivity() {
                 ModalNavigationDrawer(
                     drawerState = drawerState,
                     drawerContent = {
-                        ModalDrawerSheet { /* Drawer content */ }
+                        ModalDrawerSheet {
+                            DrawerContent()
+                        }
                     },
                 ) {
                     Scaffold(
@@ -90,23 +91,10 @@ class MainActivity : ComponentActivity() {
                                 navController.navigate(bottomNavItems[it].route)
                             }
                         },
-                        floatingActionButton = {
-                            ExtendedFloatingActionButton(
-                                text = { Text("Show drawer") },
-                                icon = { Icon(Icons.Filled.Add, contentDescription = "") },
-                                onClick = {
-                                    scope.launch {
-                                        drawerState.apply {
-                                            if (isClosed) open() else close()
-                                        }
-                                    }
-                                }
-                            )
-                        }
                     ) { contentPadding ->
                         NavHost(
                             navController = navController,
-                            startDestination = ARG_NAVIGATION_MICROS,
+                            startDestination = ARG_NAVIGATION_DIRECTION,
                             modifier = Modifier
                                 .fillMaxSize()
                                 .padding(contentPadding)

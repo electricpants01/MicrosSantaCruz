@@ -76,6 +76,7 @@ dependencies {
     // navigation compose
     implementation(libs.navigation.compose)
     implementation(libs.hilt.navigation.compose)
+    implementation(libs.accompanist.pager)
     // work manager
     implementation(libs.work.manager)
     // icons extended
