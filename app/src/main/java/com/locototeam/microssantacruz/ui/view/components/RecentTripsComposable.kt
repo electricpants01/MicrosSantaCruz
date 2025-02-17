@@ -112,14 +112,7 @@ fun RecentTripsComposable(
                         modifier = Modifier.fillMaxWidth(0.5f), // Optional: Adjust width
                     ) {
                         DropdownMenuItem(
-                            text = { Text("Remove Favorite") },
-                            onClick = {
-                                // Handle "Remove Favorite" action
-                                isMenuExpanded = false // Close the menu
-                            }
-                        )
-                        DropdownMenuItem(
-                            text = { Text("Edit Favorite") },
+                            text = { Text("Remove Recent") },
                             onClick = {
                                 // Handle "Edit Favorite" action
                                 isMenuExpanded = false // Close the menu
